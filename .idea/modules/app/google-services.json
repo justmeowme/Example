@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043802527288",
+    "firebase_url": "https://easyexams-96c54.firebaseio.com",
+    "project_id": "easyexams-96c54",
+    "storage_bucket": "easyexams-96c54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043802527288:android:8633a4c24e52c427afb8cd",
+        "android_client_info": {
+          "package_name": "com.example.example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043802527288-is8arjulp3kblss0a5rdfv0nruk7u0hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.example",
+            "certificate_hash": "f4d9d4a6ba44f45b1e8e735f8db00edd921b174e"
+          }
+        },
+        {
+          "client_id": "1043802527288-4a3urqt06dv2dmd7m0t5oqtskmn04a77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3F5RHWBuoUIF8lg_7XBYAzryauctqM9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043802527288-4a3urqt06dv2dmd7m0t5oqtskmn04a77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

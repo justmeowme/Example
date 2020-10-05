@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="CopperOrange">#BE7C4D</color>
+    <color name="DarkRed">#92140C</color>
+    <color name="JetBlack">#353238</color>
+    <color name="CamelOrange">#BE5A38</color>
+    <color name="PaleSilver">#C1B4AE</color>
+    <color name="White">#FFFFFF</color>
+</resources>
