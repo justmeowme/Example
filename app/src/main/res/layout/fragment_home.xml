@@ -1,15 +1,556 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_marginBottom="60sp"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="50sp"
-        android:text="HOME FRAGMENT" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <!--Header-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@color/JetBlack"
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1ver4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Главная"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/White"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_1ver4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:id="@+id/rus_layout"
+                android:background="@drawable/line">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_hor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_2ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_3ver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Русский язык"
+                    android:textSize="20sp"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19999999" />
+
+                <Button
+                    android:id="@+id/all_tests_rus"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button"
+
+                    android:text="К тестам"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_3ver"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+                <TextView
+                    android:id="@+id/lvl_rus_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/JetBlack"
+                    android:text="lvl 0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_1ver"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor" />
+
+                <TextView
+                    android:id="@+id/lvl_rus_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="lvl 1"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_2ver"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_rus"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor" />
+
+                <Button
+                    android:id="@+id/practise_test_rus"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button"
+
+                    android:text="Повторение"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3ver"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:background="@drawable/line">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_hor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1ver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_2ver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_3ver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Математика"
+                    android:textSize="20sp"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor1"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19999999" />
+
+                <Button
+                    android:id="@+id/all_tests_math"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button1"
+
+                    android:text="К тестам"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor1"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_3ver1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+                <TextView
+                    android:id="@+id/lvl_math_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/JetBlack"
+                    android:text="lvl 0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_1ver1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor1" />
+
+                <TextView
+                    android:id="@+id/lvl_math_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="lvl 1"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_2ver1"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor1" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_math"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver1"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor1" />
+
+                <Button
+                    android:id="@+id/practise_test_math"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button1"
+
+                    android:text="Повторение"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor1"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver1"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3ver1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:background="@drawable/line">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_hor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1ver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_2ver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_3ver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Информатика"
+                    android:textSize="20sp"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19999999" />
+
+                <Button
+                    android:id="@+id/all_tests_info"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button2"
+
+                    android:text="К тестам"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_3ver2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+                <TextView
+                    android:id="@+id/lvl_info_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/JetBlack"
+                    android:text="lvl 0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_1ver2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor2" />
+
+                <TextView
+                    android:id="@+id/lvl_info_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="lvl 1"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_2ver2"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor2" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_info"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver2"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor2" />
+
+                <Button
+                    android:id="@+id/practise_test_info"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button2"
+
+                    android:text="Повторение"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor2"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver2"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3ver2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:background="@drawable/line">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_hor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1ver3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_2ver3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_3ver3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Английский язык"
+                    android:textSize="20sp"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19999999" />
+
+                <Button
+                    android:id="@+id/all_tests_eng"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button"
+
+                    android:text="К тестам"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_3ver3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+                <TextView
+                    android:id="@+id/lvl_eng_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/JetBlack"
+                    android:text="lvl 0"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_1ver3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor3" />
+
+                <TextView
+                    android:id="@+id/lvl_eng_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="lvl 1"
+                    android:textColor="@color/JetBlack"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_2ver3"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor3" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_eng"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1ver3"
+                    app:layout_constraintTop_toTopOf="@+id/guideline_hor3" />
+
+                <Button
+                    android:id="@+id/practise_test_eng"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:background="@drawable/round_button"
+
+                    android:text="Повторение"
+                    android:textColor="@color/White"
+                    android:textAllCaps="false"
+
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_hor3"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_2ver3"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3ver3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>
