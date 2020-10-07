@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_home, container, false);
 
         progressBar = v.findViewById(R.id.progressBar_rus);
-        progressBar.setProgress(0);
+        progressBar.setProgress(MainActivity.getDefaultsInt("rus_level_progress", getActivity()));
 
 
         mButtonTestRus = v.findViewById(R.id.all_tests_rus);

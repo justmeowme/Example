@@ -15,6 +15,7 @@ public class FinalTestActivity extends AppCompatActivity {
     ProgressBar progressBar;
     TextView textViewResult;
     Button mButtonAgain, mButtonMain;
+    static public String result;
 
 
     @Override
@@ -25,8 +26,13 @@ public class FinalTestActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         progressBar.setProgress(BasicTestActivity.mFinalResult*10);
 
+        MainActivity.setDefaultsInt("rus_task1", BasicTestActivity.mFinalResult*10, FinalTestActivity.this);
+
+
         textViewResult = findViewById(R.id.textViewResult);
-        textViewResult.setText(String.valueOf(BasicTestActivity.mFinalResult)+"/10");
+        textViewResult.setText(String.valueOf(BasicTestActivity.mFinalResult) + "/10");
+
+
 
         mButtonAgain = findViewById(R.id.button_again);
         mButtonAgain.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +52,8 @@ public class FinalTestActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
 }
